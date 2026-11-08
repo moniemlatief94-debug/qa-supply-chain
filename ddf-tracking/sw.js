@@ -1,6 +1,6 @@
 // Service worker: يعمل التطبيق بدون إنترنت. الشبكة أولاً (لتصل التحديثات) ثم الكاش.
 const V = 'ddf-v2';
-const FILES = ['./', './index.html', './manifest.webmanifest', './logo.png', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png', './favicon-32.png'];
+const FILES = ['./', './index.html', './styles.css', './app.js', './manifest.webmanifest', './logo.png', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png', './favicon-32.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(V).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
 });
