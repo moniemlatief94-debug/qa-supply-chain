@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#174f78" />
+    <meta name="description" content="DDF Tracking — DAL Food Quality Assurance" />
+    <title>DDF Tracking — DAL Food · Quality Assurance</title>
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="topbar-brand" href="/" aria-label="DDF Tracking home">
+        <img src="/icon.svg" width="20" height="20" alt="" />
+        <span>DDF Tracking</span>
+      </a>
+    </header>
+
+    <main class="page-shell">
+      <section class="login-area" aria-labelledby="brand-title">
+        <div class="brand-lockup">
+          <div class="brand-mark" aria-hidden="true">
+            <img src="/icon.svg" alt="" />
+          </div>
+          <h1 id="brand-title">DDF Tracking</h1>
+          <p class="brand-subtitle">DAL Food <span aria-hidden="true">·</span> Quality Assurance</p>
+        </div>
+
+        <form class="login-card" id="login-form" novalidate>
+          <div class="field-group">
+            <label for="username">
+              <span>User name</span>
+              <span class="label-divider" aria-hidden="true">·</span>
+              <span class="arabic-label" lang="ar" dir="rtl">اسم المستخدم</span>
+            </label>
+            <input
+              id="username"
+              name="username"
+              type="text"
+              autocomplete="username"
+              autocapitalize="none"
+              spellcheck="false"
+              required
+              aria-describedby="form-message"
+            />
+          </div>
+
+          <div class="field-group password-group">
+            <label for="password">
+              <span>Password</span>
+              <span class="label-divider" aria-hidden="true">·</span>
+              <span class="arabic-label" lang="ar" dir="rtl">كلمة السر</span>
+            </label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+              aria-describedby="form-message"
+            />
+          </div>
+
+          <button class="submit-button" type="submit">
+            <span>Sign in</span>
+            <span class="button-divider" aria-hidden="true">·</span>
+            <span lang="ar" dir="rtl">دخول</span>
+          </button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+
+          <p class="account-note" lang="ar" dir="rtl">
+            الحساب بيعمله المدير. لو ما عندك حساب أو نسيت كلمة السر، كلّم المدير.
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
